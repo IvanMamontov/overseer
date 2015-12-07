@@ -7,6 +7,8 @@ Overseer supports functionalities like HPC-management, process/thread affinity s
 RDTSC timers, child-processes tracing, power-consumption and temperature monitoring, etc. 
 Both the C/C++ and Java languages are supported. 
 
+Based on libpfm4 and Linux kernels (2.6.31+), Overseer does not require specific patches or additional modules, thus offering a better solution for distributed and dynamic configurations not demanding administrator modifications to the underlying system.
+
 # Requirements
 
 Overseer requires the following development tools to be installed and configured on the targeted systems:
