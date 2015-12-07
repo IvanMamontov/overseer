@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <iostream>
+#include <unistd.h>
 #include "hpcOverseer.h"
 
 
@@ -53,7 +54,7 @@ int main(int argc, char *argv[])
     int c=0;
     while (c < TESTTIME)
     {
-        sleep(1);
+        usleep(1);
 
         // Display some info:
         cout << endl << "   From thread: " << pid << endl;

@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <iostream>
+#include <unistd.h>
 #include "hpcOverseer.h"
 using namespace std;
 
@@ -20,7 +21,7 @@ void *dummyThread(void *)
     int c=0;
     while (c<5)
     {
-        sleep(1);
+        usleep(1);
         c++;
     }
 
@@ -66,7 +67,7 @@ int main(int argc, char *argv[])
     // Wait for the other thread to start:
     while (dummythreadpid == 0)
     {
-        sleep(1);
+        usleep(1);
     }
 
     if (HpcOverseer::bindEventsToThread(dummythreadpid) == false)
@@ -88,7 +89,7 @@ int main(int argc, char *argv[])
         v = HpcOverseer::getEventFromThread(dummythreadpid, 2);
         cout << "      instructions: " << v << endl;
 
-        sleep(1);
+        usleep(1);
     }
 
     // Shutdown:
