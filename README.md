@@ -23,6 +23,10 @@ make
 sudo make install
 ```
 
+Runtime libraries are installed to ```/usr/local/bin``` by default. Edit makefiles if your Linux distribution doesn't follow this standard. 
+To access Overseer functionalities from Java, include the ```overseer.jar``` file that is available in the ```/src/java/``` directory.
+Also don't forget about Shared Library Management(http://www.cyberciti.biz/tips/linux-shared-library-management.html) and register your dynamic libraries in ```/etc/ld.so.conf``` or use LD_LIBRARY_PATH environment variable.
+
 # Examples
 
 See examples folder.
