@@ -12,7 +12,7 @@ Based on libpfm4 and Linux kernels (2.6.31+), Overseer does not require specific
 # Requirements
 
 Overseer requires the following development tools to be installed and configured on the targeted systems:
-- libpfm http://http://perfmon2.sourceforge.net/
+- libpfm http://perfmon2.sourceforge.net/
 - hwloc http://www.open-mpi.org/projects/hwloc/
 - freeipmi http://www.gnu.org/software/freeipmi/
 
