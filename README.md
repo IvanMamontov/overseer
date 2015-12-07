@@ -22,3 +22,7 @@ sudo dnf install -y libpfm hwloc freeipmi libpfm-devel hwloc-devel freeipmi-deve
 make
 sudo make install
 ```
+
+# Examples
+
+See examples folder.
