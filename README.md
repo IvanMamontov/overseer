@@ -1,5 +1,5 @@
 # Overseer
-Git clone of the overseer library http://www.peternier.com/projects/overseer/overseer.php
+Git clone of the overseer library http://sosoa.inf.unisi.ch/Instruments/Overseer
 
 Overseer is a set of tools simplifying access to real-time measurement of low-level information such as 
 Hardware Performance Counters (HPCs), IPMI sensors, and Java VM internal events. 
